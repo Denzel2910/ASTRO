@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro</title>
+    <!--se presento el problema al colocar las redes sociales se busco soluciones alternativas se uso font-awesome 6.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">  
+</head>
+<body>
+ <!--Encabezado-->  
+ <header>
+    <div class="barra_inicio">
+        <a href="#" class="logo">
+            <img src="img/logo-1.png" alt="Astro">
+        </a>
+        <!--Creamos el menu principal-->
+        <nav class="menu-principal">
+            <a href="#" class="volver-arriba"><span>Inicio</span></a>            
+            <a href="#nosotros" class="scroll-suave"><span>Nosotros</span></a>
+            <a href="#contacto" class="scroll-suave"><span>Contacto</span></a>
+        </nav>
+        <!--creamos la seccion de redes sociales-->
+        <div class="top_redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram-square"></i>
+            </a>
+
+        </div>
+    </div>
+
+    
+
+ </header> 
+
+ <!--Main-->
+
+<section class="banner">
+          
+
+                <div class="boton-iz">
+                    <a href="#" style="--clr:#fff11e"><span>Detalles</span><i></i></a>
+                </div>
+                <div class="boton-dr">
+                    <a href="#"style="--clr:#ffffff"><span>Comprar Ahora</span><i></i></a>    
+                </div>                    
+</section>
+
+<section class="nosotros" id="nosotros">
+    <div class="container">
+        <div class="col izq">
+            <div class="titulo-seccion">
+                <p>Nosotros</p>
+                <h2>Conócenos</h2>
+            </div>
+        </div>
+        <div class="col der">
+            <div class="texto">
+                <p>Astro es una empresa peruana especialista en distribución de relojeria y accesorios; que surge de la idea de innovar el concepto de una tienda fisica y pasarla a un siguiente nivel.<br>Contamos con más de 5 años de presencia en el sector, logrando mantener a nuestros clientes satisfechos con nuestra calidad, durabilidad y sobre todo precios accesible.</p>
+            </div>
+        </div>
+    </div>
+    <!--Contacto-->
+
+<div class="contacto" id="contacto">
+    <div class="datos parallax">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="blurb">
+                <h3>Escríbenos</h3>
+                <p>correo@correo.com</p>
+            </div>
+            <div class="blurb">
+                <h3>Visitanos</h3>
+                <p>Av.Tupac Amaru 5603<br>Lima-Comas</p>
+            </div>
+            <div class="blurb">
+                <h3>Horario</h3>
+                <p>Luneas a Domingo <br>9am - 6pm</p>
+        </div>
+    </div>
+    <div class="formulario">
+        <form action=""class="formulario_contacto" name="formulario_contacto">
+            <div>
+            <div class="input-group">
+                <input type="text" id="nombre" name="nombre">
+                <label class="label" for="nombre">Nombre</label>
+                
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email">
+                <label class="label" for="email">Correo electrónico</label>
+            </div>
+            <div class="input-group">
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <label class="label" for="mensaje">Mensaje</label>
+            </div>
+            <input type="submit" value="Enviar">
+            </div>
+                
+        </form>
+
+    </div>
+   
+</section>
+<footer>
+    <p class="Copyrigth">Todos los derechos reservados</p>
+    <div class="boton_redes">
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-whatsapp-square"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram-square"></i>
+        </a>
+
+    </div>
+
+</footer>
+<script src="js/bgParallax.js"></script>
+<script src="js/formulario.js"></script>
+<script src="js/scroll.js"></script>
+</body>
+</html>
