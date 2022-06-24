@@ -37,7 +37,7 @@ a :hover {
 /*espeficacioens ala estructura*/
 body {
   font-size: 25px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: #000;
   background: #fff;
   /*especificaciones del banner*/
@@ -75,7 +75,7 @@ body .banner a:hover {
           box-shadow: 0 0 35px var(--clr);
 }
 body .banner a::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 1px;
   background: #212224;
@@ -103,7 +103,7 @@ body .boton-dr a:hover {
           box-shadow: 0 0 35px var(--clr);
 }
 body .boton-dr a::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 1px;
   background: #212224;
@@ -150,7 +150,7 @@ body .boton-dr a span {
 }
 .contacto .datos {
   position: relative;
-  background-image: url('../img/plaza.jpg');
+  background-image: url("../img/plaza.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -234,7 +234,7 @@ body .boton-dr a span {
 }
 .contacto .formulario .formulario_contacto .input-group label {
   color: #808080;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
 }
 .contacto .formulario .formulario_contacto .input-group label.label {
   position: absolute;
@@ -256,11 +256,11 @@ body .boton-dr a span {
 .contacto .formulario .formulario_contacto .input-group .error {
   position: absolute;
   color: #ff3b3b;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-size: 0.875rem;
 }
 .contacto .formulario input[type="submit"] {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   background: #ffdf2b;
   color: #000;
   border-radius: 1px;
@@ -478,5 +478,31 @@ header .barra_inicio .top_redes a:hover {
   }
   .contacto .parallax .container .blurb p {
     font-size: 17px;
+  }
+}
+@media all and (max-width: 695px) {
+  body .banner {
+    padding: 0.2rem;
+  }
+  header .barra_inicio .menu-principal a {
+    padding: 0 1.5rem;
+  }
+  .contacto .datos .container {
+    padding: 15%;
+  }
+  .contacto .parallax .container .blurb {
+    width: 100%;
+    margin: 5px;
+  }
+  .nosotros .container .col.izq {
+    width: 100%;
+    padding: 5px;
+  }
+  .nosotros .container .col.izq .titulo-seccion {
+    width: 100%;
+    text-align: center;
+  }
+  .nosotros .container .col.der {
+    width: 100%;
   }
 }
